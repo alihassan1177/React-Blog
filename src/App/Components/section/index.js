@@ -1,9 +1,6 @@
 import { PureComponent } from "react";
 
 export default class Section extends PureComponent {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <section className="py-4 container mx-auto">

@@ -1,4 +1,5 @@
 import { PureComponent } from "react";
+import Pagination from "../pagination/Pagination";
 import Section from "../section";
 
 export default class Post extends PureComponent {
@@ -36,16 +37,13 @@ export default class Post extends PureComponent {
                 );
               })}
         </div>
+        <Pagination />
       </Section>
     );
   }
 }
 
 class SinglePost extends PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="post-card">
